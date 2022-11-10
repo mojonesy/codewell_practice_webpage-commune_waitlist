@@ -6,47 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commune Homepage Site Mockup</title>
     <link 
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" 
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap" 
         rel="stylesheet">
     <link 
         href="index.css"
         rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../Assets/Logo.svg" alt="commune logo">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="../Assets/Logo.svg" alt="commune logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <img class="hamburger-icon" src="../Assets/Hamburger Menu.svg">
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Affiliates</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Communities</a></li>
+                    <li class="nav-item"><button class="btn waitlist-btn">Join Waitlist</button></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="main">
+      <div class="main-text">
+        <!-- Intro -->
+        <div class="banner">
+            <p class="banner-text">We are now allowing early-access for users.
+                <a href="/" class="banner-text-link">Learn more.</a>
+            </p>
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-        </nav>
-    </header>
+        <h1 class="title intro-title">
+            Build a highly 
+            <span>engaged community</span>
+            <span>with no effort.</span>
+        </h1>
+        <p class="call-to-action">Commune offers the tools you need to build a highly
+            engaged community with little to no effort. Simply set up your Commune workspace,
+            and manage everything from members to content from one central dashboard.
+        </p>
 
-    <!-- Intro -->
-    <div class="banner"></div>
-    <h1 class="title intro-title">Build a highly engaged community with no effort.</h1>
-    <p class="call-to-action">Commune offers the tools you need to build a highly
-        engaged community with little to no effort. Simply set up your Commune workspace,
-        and manage everything from members to content from one central dashboard.
-    </p>
+        <!-- Email Input -->
+        <div class="email-input-area">
+            <label for="email" aria-label="email input">
+                <input 
+                    type="email" 
+                    class="email"
+                    id="email" 
+                    for="email" 
+                    name="email"
+                    placeholder="Enter your e-mail address">
+            </label>
+            <button class="btn waitlist-btn">Join Waitlist</button>
+        </div>
+      </div>
 
-    <!-- Email Input -->
-    <label for="email" aria-label="email input">
-        <input 
-            type="email" 
-            id="email" 
-            for="email" 
-            name="email"
-            placeholder="Enter your e-mail address">
-    </label>
-    <button class="btn waitlist-btn">Join Waitlist</button>
+      <img class="desktop-view-img" src="../Assets/Illustration.png" alt="colorful phone illustration">
+    </div>
 
-    <footer>
-        Used by these companies:
-        <div></div>
-    </footer>
+        <footer>
+            Used by these companies:
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <img src="../Assets/Atlassian Icon.svg" alt="atlassian icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Behance Icon.svg" alt="behance icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Bing Icon.svg" alt="bing icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Bitbucket Icon.svg" alt="bitbucket icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Dropbox Icon.svg" alt="dropbox icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Twitch Icon.svg" alt="twitch icon">
+                </li>
+                <li class="social-list-item">
+                    <img src="../Assets/Twitter Icon.svg" alt="twitter icon">
+                </li>
+            </ul>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
