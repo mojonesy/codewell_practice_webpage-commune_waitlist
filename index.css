@@ -81,6 +81,8 @@ p {
     background-color: transparent;
 }
 
+.nav-toggle:hover { cursor: pointer }
+
 .nav { display: none }
 
 /* Banner */
@@ -144,6 +146,7 @@ p {
     padding: 1em;
     color: hsla(217, 6%, 72%, 0.6);
     font-size: var(--fw-body);
+    width: 100%;
 }
 
 .waitlist-btn {
@@ -199,7 +202,6 @@ p {
     .main { 
         display: grid;
         grid-template-columns: 3fr 450px;
-        margin: 0 auto;
     }
 
     .banner { margin-left: 0 }
